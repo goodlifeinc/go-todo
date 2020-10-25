@@ -5,14 +5,18 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/urfave/negroni"
+
 	"./router"
 )
 
 func main() {
 	r := router.Router()
-	// fs := http.FileServer(http.Dir("build"))
-	// http.Handle("/", fs)
+
+	n := negroni.Classic()
+	n.UseHandler(r)
+
 	fmt.Println("Starting server on the port 8080...")
 
-	log.Fatal(http.ListenAndServe(":8080", r))
+	log.Fatal(http.ListenAndServe(":8080", n))
 }

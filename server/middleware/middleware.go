@@ -7,18 +7,18 @@ import (
 	"log"
 	"net/http"
 
-	"../models"
 	"github.com/gorilla/mux"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+
+	"../models"
 )
 
 // DB connection string
-// const connectionString = "mongodb://localhost:27017"
-const connectionString = "Connection String"
+const connectionString = "mongodb://localhost:27017"
 
 // Database Name
 const dbName = "test"

@@ -20,7 +20,7 @@ The offline version of application `Get Shit Done` is hosted at
 
 1. golang https://golang.org/dl/
 2. gorilla/mux library for router `go get -u github.com/gorilla/mux`
-3. mongo-driver library to connect with mongoDB `go get go.mongodb.org/mongo-driver`
+3. mongo-driver library to connect with mongoDB `go get go.mongodb.org/mongo-driver/mongo`
 
 ### react client
 
